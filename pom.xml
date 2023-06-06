@@ -8,7 +8,7 @@
   <artifactId>micro</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>khaledservices</name>
+  <name>micro</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -19,7 +19,6 @@
     <spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
     <spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
   </properties>
-
 
   <dependencyManagement>
     <dependencies>
