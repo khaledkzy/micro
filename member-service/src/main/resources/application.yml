@@ -2,7 +2,7 @@ server:
   port: 8888
 spring:
   application:
-    name: MemberService
+    name: Member-Service
   datasource:
     password: postgres
     url: jdbc:postgresql://localhost:5432/member
