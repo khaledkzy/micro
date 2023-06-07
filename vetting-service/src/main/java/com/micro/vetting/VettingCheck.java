@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class VettingCheckHistory {
+public class VettingCheck {
      @Id
     @SequenceGenerator(
             name = "vetting_id_sequence",
@@ -25,6 +25,6 @@ public class VettingCheckHistory {
     )
     private Integer id;
     private Boolean isValid;
-    private String memberId;
+    private Integer memberId;
     private LocalDateTime createdAt;
 }
