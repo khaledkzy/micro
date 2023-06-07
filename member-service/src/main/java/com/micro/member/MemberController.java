@@ -1,4 +1,4 @@
-package com.micro.user;
+package com.micro.member;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("api/users")
-public record UserController(UserService userService) {
+public record MemberController(MemberService memberService) {
     @PostMapping
-    public void registerUser(@RequestBody UserRegistrationRequest userRegistrationRequest) {
-        log.info("new user {}", userRegistrationRequest);
-        userService.registerUser(userRegistrationRequest);
+    public void registerUser(@RequestBody MemberRegistrationRequest memberRegistrationRequest) {
+        log.info("new member {}", memberRegistrationRequest);
+        memberService.registerUser(memberRegistrationRequest);
     }
 }
