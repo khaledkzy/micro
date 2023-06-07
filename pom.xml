@@ -10,6 +10,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>member-service</module>
+    <module>vetting-service</module>
   </modules>
 
   <name>micro</name>

@@ -1,4 +1,4 @@
-package com.khaled;
+package com.vetting;
 
 import static org.junit.Assert.assertTrue;
 
