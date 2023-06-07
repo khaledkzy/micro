@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="member-service" />
         <module name="vetting-service" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
