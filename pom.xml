@@ -13,6 +13,7 @@
         <module>vetting-service</module>
         <module>eureka-server</module>
         <module>clients</module>
+        <module>alert</module>
     </modules>
 
     <name>micro</name>

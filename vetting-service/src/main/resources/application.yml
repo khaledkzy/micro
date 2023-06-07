@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   application:
-    name: Vetting-Service
+    name: vetting-service
   datasource:
     password: postgres
     url: jdbc:postgresql://localhost:5432/vetting

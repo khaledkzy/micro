@@ -11,6 +11,7 @@
         <module name="clients" />
         <module name="vetting-service" />
         <module name="eureka-server" />
+        <module name="alert" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
