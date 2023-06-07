@@ -22,7 +22,7 @@ public class MemberService {
         memberRepository.saveAndFlush(member);
 
         VettingResponse vettingResponse = restTemplate.getForObject(
-             "http://localhost:9999/api/vetting/{memberId}",
+             "http://VETTING-SERVICE/api/vetting/{memberId}",
                 VettingResponse.class,
                 member.getId()
         );

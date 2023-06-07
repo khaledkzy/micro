@@ -9,6 +9,7 @@ spring:
     username: postgres
   jpa:
     hibernate:
+      # Create-drop Always creates a fresh database, only for Dev purposes
       ddl-auto: create-drop
     properties:
       hibernate:
