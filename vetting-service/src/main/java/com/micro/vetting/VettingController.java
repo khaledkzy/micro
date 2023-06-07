@@ -1,6 +1,7 @@
 package com.micro.vetting;
 
 
+import com.micro.clients.vetting.VettingResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 

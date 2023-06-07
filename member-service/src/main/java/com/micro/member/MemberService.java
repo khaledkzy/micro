@@ -1,5 +1,7 @@
 package com.micro.member;
 
+import com.micro.clients.vetting.VettingClient;
+import com.micro.clients.vetting.VettingResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -10,6 +12,7 @@ public class MemberService {
 
     private final RestTemplate restTemplate;
     private final MemberRepository memberRepository;
+    private final VettingClient vettingClient;
     public void registerUser(MemberRegistrationRequest userRegistrationRequest) {
         Member member = Member.builder()
                 .firstName(userRegistrationRequest.firstName())
@@ -21,11 +24,7 @@ public class MemberService {
          // This saves to database
         memberRepository.saveAndFlush(member);
 
-        VettingResponse vettingResponse = restTemplate.getForObject(
-             "http://VETTING-SERVICE/api/vetting/{memberId}",
-                VettingResponse.class,
-                member.getId()
-        );
+        VettingResponse vettingResponse = vettingClient.isValid(member.getId());
 
         if(!vettingResponse.isValid()) {
             throw new IllegalStateException("Did not pass the Vetting Process");
