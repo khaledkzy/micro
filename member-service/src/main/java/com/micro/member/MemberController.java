@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("api/users")
+@RequestMapping("api/members")
 public record MemberController(MemberService memberService) {
     @PostMapping
     public void registerUser(@RequestBody MemberRegistrationRequest memberRegistrationRequest) {
