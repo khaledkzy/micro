@@ -1,1 +1,9 @@
-com\micro\user\UserApplication.class
+com\micro\member\MemberController.class
+com\micro\member\Member.class
+com\micro\member\MemberRegistrationRequest.class
+com\micro\member\MemberRepository.class
+com\micro\member\MemberService.class
+com\micro\member\MemberApplication.class
+com\micro\member\VettingResponse.class
+com\micro\member\MemberConfiguration.class
+com\micro\member\Member$MemberBuilder.class
